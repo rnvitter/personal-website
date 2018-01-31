@@ -1,14 +1,15 @@
 <template>
-  <div class="nps-cover">
+  <div class="carousel-cover">
     <div class="title">
-      <h2 class="header">National Parks Map</h2>
-      <p>Coming Soon</p>
+      <h2 class="header">Vue Infinity Carousel</h2>
+      <p>Coming Soon<br>
+      <br>A custom carousel component for Vue</p>
     </div>
   </div>
 </template>
 
 <script>
-  const name = 'NpsCover'
+  const name = 'VueInfinityCarousel'
 
   export default {
     name
@@ -16,8 +17,10 @@
 </script>
 
 <style scoped>
-  .nps-cover {
+  .carousel-cover {
     height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #dee1e1), color-stop(90%, #f4f4f4));
+    background: linear-gradient(90deg, #dee1e1 10%, #f4f4f4 90%); /* W3C */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import HeadlineAnimation from '@/components/shared/HeadlineAnimation'
+import HeadlineAnimation from '@/components/shared/animations/HeadlineAnimation'
 
-const name = 'Cover'
+const name = 'LandingPage'
 
 const components = {
   HeadlineAnimation

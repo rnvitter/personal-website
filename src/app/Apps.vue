@@ -3,10 +3,13 @@
     <carousel navColor="#999">
       <div class="app-wrapper">
         <div class="app">
-          <StatifyCover></StatifyCover>
+          <Statify></Statify>
         </div>
         <div class="app">
-          <NpsCover></NpsCover>
+          <NpsMap></NpsMap>
+        </div>
+        <div class="app">
+          <VueInfinityCarousel></VueInfinityCarousel>
         </div>
       </div>
     </carousel>
@@ -15,13 +18,14 @@
 
 <script>
   import Carousel from '@/components/shared/Carousel'
-  import { StatifyCover, NpsCover } from '@/components/AppCovers'
+  import { Statify, NpsMap, VueInfinityCarousel } from '@/components/Apps'
 
-  const name = 'Applications'
+  const name = 'Apps'
 
   const components = {
-    StatifyCover,
-    NpsCover,
+    Statify,
+    NpsMap,
+    VueInfinityCarousel,
     Carousel
   }
 

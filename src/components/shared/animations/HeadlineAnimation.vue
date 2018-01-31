@@ -33,7 +33,7 @@
     position: absolute;
     width: 250px;
     left: 0;
-    z-index: 99;
+    z-index: 999;
     pointer-events: none;
     -webkit-transform-style: preserve-3d;
     -webkit-transform: translate3d(0,0,0);
@@ -49,7 +49,6 @@
   }
 
   .words-wrapper {
-    /* display: inline; */
     text-align: left;
     width: 300px;
   }
@@ -58,10 +57,8 @@
     position: absolute;
     opacity: 0;
     overflow: hidden;
-  }
-
-  .words-wrapper span {
     -webkit-backface-visibility: hidden;
+    will-change: transform;
     -webkit-animation: rotateWords 18s linear infinite 0s;
   	animation: rotateWords 18s linear infinite 0s;
   }

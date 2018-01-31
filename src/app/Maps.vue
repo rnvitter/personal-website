@@ -30,7 +30,7 @@
 <script>
   import Carousel from '@/components/shared/Carousel'
 
-  const name = 'Cartography'
+  const name = 'Maps'
 
   const components = {
     Carousel

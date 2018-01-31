@@ -9,9 +9,9 @@
 </template>
 
 <script>
-  import AudioAnimation from './AudioAnimation'
+  import AudioAnimation from '@/components/shared/animations/AudioAnimation'
 
-  const name = 'StatifyCover'
+  const name = 'Statify'
 
   const components = {
     AudioAnimation
@@ -19,7 +19,7 @@
 
   const methods = {
     goTo () {
-      window.location.href = 'https://statify-beta.herokuapp.com/'
+      window.location.href = 'http://my-statify.ryanvitter.com/'
     }
   }
 

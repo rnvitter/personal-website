@@ -17,7 +17,7 @@ import Carousel from '@/components/shared/Carousel'
 
 import services from '../services/services'
 
-const name = 'Photography'
+const name = 'Photos'
 
 const components = {
   Carousel

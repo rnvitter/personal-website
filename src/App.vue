@@ -11,30 +11,30 @@
     <div v-else>
       <header>
         <!-- <navbar/> -->
-        <cover/>
+        <landing-page/>
       </header>
-      <applications id="applications" class="section"/>
-      <photography id="photography" class="section"/>
-      <cartography id="cartography" class="section"/>
+      <apps id="apps" class="section"/>
+      <photos id="photos" class="section"/>
+      <maps id="maps" class="section"/>
     </div>
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/shared/Navbar'
-import Cover from '@/components/shared/Cover'
-import Applications from '@/app/Applications'
-import Cartography from '@/app/Cartography'
-import Photography from '@/app/Photography'
+import LandingPage from '@/components/shared/LandingPage'
+import Apps from '@/app/Apps'
+import Maps from '@/app/Maps'
+import Photos from '@/app/Photos'
 
 export default {
   name: 'app',
   components: {
     Navbar,
-    Cover,
-    Photography,
-    Applications,
-    Cartography
+    LandingPage,
+    Photos,
+    Apps,
+    Maps
   },
   methods: {
     doYourselfAFavor (url) {
@@ -55,8 +55,13 @@ export default {
 <style>
   @import url('https://fonts.googleapis.com/css?family=Lato:300');
 
+  html, body {
+    -webkit-font-smoothing: antialiased;
+  }
+
   body {
     margin: 0;
+    -webkit-backface-visibility: hidden;
   }
 
   #app {
